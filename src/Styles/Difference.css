@@ -55,3 +55,41 @@
     padding: 0px 30px;
     border-radius: 8px;
 }
+
+
+@media only screen and (max-width: 600px){
+    .departure{
+        margin-top: 20px;
+    }
+    .experience{
+        margin-top: 20px;
+    }
+    .tour{
+        margin-top: 20px;
+    }
+}
+@media only screen and (min-width: 600px){
+    .departure{
+        margin-top: 20px;
+    }
+    .experience{
+        margin-top: 20px;
+    }
+    .tour{
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .departure{
+        margin-top: 0px;
+    }
+}
+@media only screen and (min-width: 992px){
+    .experience{
+        margin-top: 0px;
+    }
+    .unique-one{
+        text-align: left;
+    }
+}

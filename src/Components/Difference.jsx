@@ -21,7 +21,7 @@ const Difference = () => {
                 </div>
             </div>
 
-            <div className="container">
+            <div className="container tour">
                 <div className="row">
                     <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                        

@@ -1,3 +1,12 @@
+.operate_wrapper{
+    background-image: url('../Assets/Rectangle-170.png');
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px;
+}
+
 .peru{
    background-image:linear-gradient(rgba(0,0,0,0.18),rgba(0,0,6,1.18)), url('../Assets/operateFirstImg.jpeg');
    background-repeat: no-repeat;
@@ -35,8 +44,12 @@
 .operate-contents{
     text-align: left;
 }
+.operate-contents p{
+    color: white;
+}
 .operate-firstHeading{
     font-size: 40px;
+    color: white;
 }
 .operate-secondHeading{
     font-size: 40px;
@@ -44,7 +57,7 @@
 }
 
 @media only screen and (max-width: 600px){
-    .operate{
+    .operate_wrapper{
         margin-top: 5rem;
     }
     .peru{
@@ -52,7 +65,7 @@
     }
 }
 @media only screen and (min-width: 600px){
-    .operate{
+    .operate_wrapper{
         margin-top: 5rem;
     }
     .peru{
