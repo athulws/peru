@@ -1,0 +1,62 @@
+.peru{
+   background-image:linear-gradient(rgba(0,0,0,0.18),rgba(0,0,6,1.18)), url('../Assets/operateFirstImg.jpeg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   /* height: 100%; */
+   position: relative;
+}
+.ecuador{
+    background-image: linear-gradient(rgba(0,0,0,0.18),rgba(0,0,6,1.18)), url('../Assets/OperateSecondImg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* height: 100%; */
+    position: relative;
+}
+.peru-name h3{
+    color: white;
+}
+.peru-name{
+    position: absolute;
+    bottom: 0;
+    width: 30%;
+}
+.ecuador-name{
+    position: absolute;
+    bottom: 0;
+    width: 49%;
+}
+.ecuador-name h3{
+    color: white;
+}
+.operate-contents{
+    text-align: left;
+}
+.operate-firstHeading{
+    font-size: 40px;
+}
+.operate-secondHeading{
+    font-size: 40px;
+    color: red;
+}
+
+@media only screen and (max-width: 600px){
+    .operate{
+        margin-top: 5rem;
+    }
+    .peru{
+        height: 22rem;
+    }
+}
+@media only screen and (min-width: 600px){
+    .operate{
+        margin-top: 5rem;
+    }
+    .peru{
+        height: 22rem;
+    }
+    .ecuador{
+        height: 22rem;
+    }
+}

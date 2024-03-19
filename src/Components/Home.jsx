@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from './Navbar'
 import '../Styles/Home.css'
+import Choose from './Choose'
+import Operate from './Operate'
 
 const Home = () => {
     return (
@@ -21,6 +23,8 @@ const Home = () => {
                 </div>
 
             </div>
+            <Choose/>
+            <Operate/>
         </div>
     )
 }
