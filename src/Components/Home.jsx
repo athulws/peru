@@ -5,6 +5,7 @@ import Choose from './Choose'
 import Operate from './Operate'
 import Awards from './Awards'
 import Difference from './Difference'
+import PopularTours from './PopularTours'
 
 const Home = () => {
     return (
@@ -29,6 +30,7 @@ const Home = () => {
             <Operate/>
             <Awards/>
             <Difference/>
+            <PopularTours/>
         </div>
     )
 }
