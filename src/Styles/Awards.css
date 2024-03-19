@@ -1,0 +1,48 @@
+.agencia img,
+.essna img,
+.sunat img,
+.adviser img{
+    height: 9rem;
+}
+
+.adventure img{
+    height: 6rem;
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 600px){
+    .award-wrapper{
+        margin-top: 5rem;
+    }
+    .award-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media only screen and (min-width: 600px){
+    .award-wrapper{
+        margin-top: 5rem;
+    }
+    .award-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .award-section{
+        flex-direction: row;
+        gap: 5rem;
+        margin-top: 30px;
+    }
+    .line-one{
+        height: 2px;
+        background-color: rgb(179,179,179);
+        width: 100%;
+    }
+}

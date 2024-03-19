@@ -5,6 +5,7 @@
    background-position: center center;
    /* height: 100%; */
    position: relative;
+   border-radius: 8px;
 }
 .ecuador{
     background-image: linear-gradient(rgba(0,0,0,0.18),rgba(0,0,6,1.18)), url('../Assets/OperateSecondImg.jpeg');
@@ -13,6 +14,7 @@
     background-position: center center;
     /* height: 100%; */
     position: relative;
+    border-radius: 8px;
 }
 .peru-name h3{
     color: white;
