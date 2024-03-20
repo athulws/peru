@@ -39,19 +39,20 @@
     border: 1px solid black;
     border-radius: 8px;
     font-family: 'Montserrat', sans-serif;
+    background-color: white;
 }
 
 .objective {
     font-family: 'Montserrat', sans-serif;
 }
 
-.recieve {
+/* .recieve {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 
-}
+} */
 
 .recieve p {
     margin-bottom: 0rem;
@@ -62,6 +63,10 @@
 .first-lastNames input::placeholder {
     color: var(--placeholder-color) !important;
 }
+.emai-Names input::placeholder {
+    color: var(--placeholder-color) !important;
+}
+
 
 /* .transparent-input {
     background-color: transparent !important;
@@ -80,11 +85,68 @@
   }
   .inbox-title{
     color: white;
+    font-size: 60px;
+    font-family: 'Bebas Neue', sans-serif;
   }
+  .submit-interest button{
+    height: 60px;
+    width: 10rem;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .get-inspiration {
+    background-image: linear-gradient(180deg, #00000045 48%, #000000 69%);
+    height: 100%;
+    padding-top: 3rem;
+}
 
 @media only screen and (max-width: 600px){
     .interest-wrapper{
         height: 100%;
         margin-top: 5rem;
     }
+    .submit-interest{
+        margin: 20px 0px;
+    }
+    .recieve {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+}
+@media only screen and (min-width: 600px){
+    .interest-wrapper{
+        
+        margin-top: 5rem;
+    }
+    .submit-interest{
+        margin: 20px 0px;
+    }
+    .recieve {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .first-lastNames{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .email-confirm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 98%;
+    }
+    .recieve p {
+         white-space: nowrap;
+    }
+    
 }

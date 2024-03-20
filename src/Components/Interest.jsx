@@ -17,22 +17,29 @@ const Interest = () => {
                 </div>
             </div>
 
-            <div className="container">
-                <div className="row">
-                    <div className="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
-                        <div className="inbox text-center">
-                            <h2 className='inbox-title'>GET INSPIRATION IN YOUR INBOX</h2>
-                            <div className="first-lastNames">
-                                <input type="text" className="form-control mb-3 transparent-input" placeholder='First Name' style={{ '--placeholder-color': 'white' }} />
-                                <input type="text" className="form-control mb-3 transparent-input" placeholder='Last Name' style={{ '--placeholder-color': 'white' }} />
-                            </div>
-
-
-                            <div className="first-lastNames">
-                                <input type="email" className="form-control mb-3 transparent-input" placeholder='Email' style={{ '--placeholder-color': 'white' }}/>
-                                <div className='recieve'>
-                                    <input type="radio" />
-                                    <p>I'll be happy to receive mails from ATP</p>
+            <div className='container-fluid get-inspiration'>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+                            <div className="inbox text-center">
+                                <h2 className='inbox-title'>GET INSPIRATION IN YOUR INBOX</h2>
+                                <div className="first-lastNames">
+                                    <input type="text" className="form-control mb-3 transparent-input" placeholder='First Name' style={{ '--placeholder-color': 'white' }} />
+                                    <input type="text" className="form-control mb-3 transparent-input" placeholder='Last Name' style={{ '--placeholder-color': 'white' }} />
+                                </div>
+    
+    
+                                <div className="emai-Names">
+                                    <div className='email-confirm'>
+                                        <input type="email" className="form-control mb-3 transparent-input" placeholder='Email' style={{ '--placeholder-color': 'white' }} />
+                                        <div className='recieve'>
+                                            <input type="radio" />
+                                            <p>I'll be happy to receive mails from ATP</p>
+                                        </div>
+                                    </div>
+                                    <div className='submit-interest'>
+                                        <button>Submit</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>

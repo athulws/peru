@@ -1,0 +1,15 @@
+.back-to-top-btn{
+    position: fixed;
+    bottom: 120px;
+    right: 50px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: black;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, black 0%, black 100%);;
+}

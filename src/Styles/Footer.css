@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.footer-wrapper{
+    background-color: #000000;
+}
+.footer-wrapper h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: #FF3636;
+}
+.footer-wrapper p{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #FFFFFF;
+}
+/* .policies h2{
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Bebas Neue', sans-serif;
+} */

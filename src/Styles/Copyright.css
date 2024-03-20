@@ -1,0 +1,27 @@
+.copyRight-wrapper{
+    background-color: #000000;
+    padding: 20px 0px;
+}
+.icons {
+    width: 50px;
+    height: 50px;
+    line-height: 48px;
+    border-radius: 50%;
+    background-color: #262626;
+    color: white;
+}
+.newIcons{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+}
+.copy-right{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.copy-right p{
+    margin-bottom: 0rem;
+    color: white;
+}

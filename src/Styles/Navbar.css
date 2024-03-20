@@ -1,4 +1,20 @@
 /* Navbar.css */
+.booking {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 8px;
+  height: 40px;
+  width: 109px;
+}
+
+.en-dropdown{
+  background-color: transparent;
+  
+  height: 40px;
+  width: 109px;
+
+}
+
 
 .navbar {
     display: flex;
@@ -17,7 +33,7 @@
   .navbar-options {
     list-style: none;
     display: flex;
-    gap: 5rem;
+    gap: 3rem;
     margin-bottom: 0; 
       /* margin bottom : 0; kodukkanam from inspect - navbar content center il akkan */
   }
@@ -151,7 +167,7 @@
     margin-top: 1rem;
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1050px) {
     .navbar-options {
       display: none;
       flex-direction: column;
@@ -174,13 +190,15 @@
     }
   }
   
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1051px) {
     .menu-icon {
       display: none;
     }
   
     .navbar-options {
       display: flex;
+      justify-content: center;
+      align-items: center;
     }
   
     .sidebar {

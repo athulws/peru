@@ -8,6 +8,9 @@ import Difference from './Difference'
 import PopularTours from './PopularTours'
 import Adventure from './Adventure'
 import Interest from './Interest'
+import BackToTopButton from './BackToTopButton'
+import Footer from './Footer'
+import Copyright from './Copyright'
 
 const Home = () => {
     return (
@@ -35,6 +38,10 @@ const Home = () => {
             <PopularTours/>
             <Adventure/>
             <Interest/>
+            <Footer/>
+            <Copyright/>
+            <BackToTopButton/>
+            
         </div>
     )
 }

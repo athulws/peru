@@ -40,7 +40,11 @@ const Navbar = () => {
                 <Link to={''}><div>Activities</div></Link>
                 <Link to={''}><div>Blog</div></Link>
                 <Link to={''}><div>Contact</div></Link>
-                <button>Book Now</button>
+                <button className='booking'>Book Now</button>
+                <select className='en-dropdown'>
+                    <option value="option1">EN</option>
+                </select>
+
 
                 {/* <li className="dropdown">
                     How it works
@@ -67,7 +71,10 @@ const Navbar = () => {
                     <Link to={''}><div>Activities</div></Link>
                     <Link to={''}><div>Blog</div></Link>
                     <Link to={''}><div>Contact</div></Link>
-                    <button>Book Now</button>
+                    <button className='booking'>Book Now</button>
+                    <select className='en-dropdown'>
+                        <option value="option1">EN</option>
+                    </select>
                 </div>
             </div>
         </div>
