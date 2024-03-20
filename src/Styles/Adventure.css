@@ -1,0 +1,47 @@
+.adventure{
+    margin-top: 5rem;
+}
+
+.adventure img{
+    height: 9rem;
+    margin-bottom: 20px;
+}
+
+.adventure-img img {
+    height: 34rem;
+    border-radius: 8px;
+}
+.frame-img{
+    text-align: right;
+}
+.peruvian{
+    color: red;
+}
+@media only screen and (max-width: 600px){
+    .adventure-img{
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 600px){
+    .adventure-img{
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .adventure-img{
+        text-align: left;
+    }
+    .adventure-headings{
+        text-align: left;
+    }
+    .peruvian{
+        text-align: left;
+    }
+    .ralph{
+        text-align: left;
+    }
+    .winner{
+        text-align: left;
+    }
+    
+}

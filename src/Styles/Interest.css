@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.interest-wrapper {
+    background-image: url('../Assets/d859c8cf08890d2e0a71a5ea4c356286.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+   
+}
+
+.interest-place {
+    text-align: right;
+    
+}
+
+.intersting {
+    color: red;
+    font-size: 100px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 0rem;
+}
+
+.found {
+    font-size: 100px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 0rem;
+}
+
+.contacting {
+    height: 60px;
+    width: 10rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.objective {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.recieve {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.recieve p {
+    margin-bottom: 0rem;
+}
+
+
+
+.first-lastNames input::placeholder {
+    color: var(--placeholder-color) !important;
+}
+
+/* .transparent-input {
+    background-color: transparent !important;
+    border: none;
+    border-bottom: 1px solid #ced4da; 
+  } */
+  .transparent-input {
+    background-color: transparent !important;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    color: white !important; /* Set the text color to white */
+}
+
+  .recieve p{
+    color: white;
+  }
+  .inbox-title{
+    color: white;
+  }
+
+@media only screen and (max-width: 600px){
+    .interest-wrapper{
+        height: 100%;
+        margin-top: 5rem;
+    }
+}

@@ -3,7 +3,7 @@ import '../Styles/PopularTours.css'
 
 const PopularTours = () => {
     return (
-        <div>
+        <div className='popular'>
             <div className="popular-sec">
                 <div className="popular-setup">
                     <h2 className='popular-firstHeading'>OUR POPULAR</h2>
@@ -13,14 +13,14 @@ const PopularTours = () => {
 
             <div className='popularTours'>
                 <div className="amazone">
-                    <h2>AMAZONE&<span>ANDES</span></h2>
+                    <h2 className='place-name'>AMAZON &<span className='color-red'> ANDES</span></h2>
 
                     <div className='popular-firstDays'>
                         <div className='days-nine'>
                             <div className="NumberNine">
                                 <p>9</p>
                             </div>
-                            <div>
+                            <div className='day'>
                                 <p>Days</p>
                             </div>
                         </div>
@@ -28,7 +28,7 @@ const PopularTours = () => {
                             <div className="NumberTen">
                                 <p>10</p>
                             </div>
-                            <div>
+                            <div className='day'>
                                 <p>Days</p>
                             </div>
                         </div>
@@ -38,12 +38,12 @@ const PopularTours = () => {
                         <div className="price">
                             <p>$</p>
                         </div>
-                        <div>
+                        <div className='day'>
                             <p>Adult - $2095 Children - $1895</p>
                         </div>
                     </div>
 
-                    <div>
+                    <div className='weekly'>
                         <p>Weekly trips year round</p>
                     </div>
                     <div className='visit'>
@@ -53,14 +53,14 @@ const PopularTours = () => {
                 </div>
 
                 <div className="peruEncopassed">
-                    <h2>PERU<span>ENCOMPASSED</span></h2>
+                    <h2 className='place-name'>PERU <span className='color-red'>ENCOMPASSED</span></h2>
 
                     <div className='popular-firstDays'>
                         <div className='days-nine'>
                             <div className="NumberNine">
                                 <p>21</p>
                             </div>
-                            <div>
+                            <div className='day'>
                                 <p>Days</p>
                             </div>
                         </div>
@@ -68,7 +68,7 @@ const PopularTours = () => {
                             <div className="NumberTen">
                                 <p>20</p>
                             </div>
-                            <div>
+                            <div className='day'>
                                 <p>Days</p>
                             </div>
                         </div>
@@ -78,12 +78,12 @@ const PopularTours = () => {
                         <div className="price">
                             <p>$</p>
                         </div>
-                        <div>
+                        <div className='day'>
                             <p>Adult - $2095 Children - $1895</p>
                         </div>
                     </div>
 
-                    <div>
+                    <div className='weekly'>
                         <p>Weekly trips year round</p>
                     </div>
                     <div className='visit'>

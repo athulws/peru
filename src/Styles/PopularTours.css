@@ -26,7 +26,7 @@
 }
 .popular-firstDays{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .amazone{
@@ -35,6 +35,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    padding: 99px 81px;
 }
 .peruEncopassed{
     background-image: linear-gradient(rgba(0,0,0,0.18),rgba(0,0,6,1.18)), url('../Assets/cbba0e544f5148da118b1992a4a86d40.jpeg');
@@ -42,11 +43,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    padding: 99px 81px;
 }
 .days-nine{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 .NumberNine {
     background-image: url('../Assets/Ellipse-3-1.png');
@@ -67,6 +70,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 .NumberTen {
     background-image: url('../Assets/Ellipse-3-1.png');
@@ -85,8 +89,9 @@
 
 .doller{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    color: white;
 }
 .price{
     background-image: url('../Assets/Ellipse-3-1.png');
@@ -102,11 +107,73 @@
     color: #ffffff; 
     padding-top: 15px;
 }
+.visit{
+    text-align: left;
+}
 .visit button{
     height: 60px;
     width: 10rem;
     border: none;
     border-radius: 8px;
 }
+.color-red{
+    color: red;
+}
+.place-name{
+    text-align: left;
+}
+.weekly{
+    color: white;
+    text-align: left;
+}
 
+@media only screen and (max-width: 600px){
+    .popular{
+        margin-top: 5rem;
+    }
+    .popularTours{
+        flex-direction: column;
+    }
+    .popular-firstDays {
+        margin-left: -17px;
+    }
+    .doller{
+        margin-left: -17px;
+    }
+}
+@media only screen and (min-width: 600px){
+    .popular{
+        margin-top: 5rem;
+    }
+    .popularTours{
+        flex-direction: column;
+    }
+    .popular-firstDays {
+        margin-left: -17px;
+    }
+    .doller{
+        margin-left: -17px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .popularTours{
+        flex-direction: row;
+    }
+    .place-name{
+        font-size: 40px;
+    }
+    .day p{
+        font-size: 24px;
+        margin-bottom: 0rem;
+    }
+    .weekly p{
+        font-size: 24px;
+    }
+    .popular-firstHeading{
+        font-size: 100px;
+    }
+    .popular-secondHeading{
+        font-size: 100px;
+    }
+}
   
