@@ -7,13 +7,13 @@ const Difference = () => {
 
             <div className="container difference-container">
                 <div className="row">
-                    <div className="col-lg-4">
+                    <div className="col-lg-6">
                         <div className="unique-one">
                             <h2 className='unique-firstTitle'>WHAT MAKES US</h2>
                             <h2 className='unique-secondTitle'>DIFFERENT?</h2>
                         </div>
                     </div>
-                    <div className="col-lg-4 unique_setUp">
+                    <div className="col-lg-6 unique_setUp">
                         <div className="unique-paragraph">
                             <p>We believe strongly in low impact or rather, positive impact tourism. Broadly speaking, this means that we try to minimize the negative aspects of tourism on the local cultures and environments that we visit and maximize the positive aspects. We hope that one of the joys of traveling with ATP will be in meeting the local people and traveling to more remote areas. Unfortunately, tourism can radically alter what it was that inspired the industry in the first place. It is for this reason that we as travelers have a responsibility to minimize their impact on the people and environments that are visited.</p>
                         </div>
