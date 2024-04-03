@@ -39,7 +39,7 @@ const Home = () => {
             <PopularTours/>
             <Adventure/>
             <Interest/>
-            {/* <GoogleRecaptcha/> */}
+            <GoogleRecaptcha/>
             <Footer/>
             <Copyright/>
             <BackToTopButton/>
