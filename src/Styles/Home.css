@@ -1,52 +1,140 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+.homePage {
+    overflow: hidden;
+}
+
 .home-section {
-    background-image: linear-gradient(rgba(0,0,0,0.18),rgba(0,0,6,1.18)), url('../Assets/peru.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 6, 1.18)), url('../Assets/peru.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 100vh;
-    
+    padding-bottom: 5rem;
+    /* height: 100vh; */
+
 }
-.home-wrapper{
+
+.home-wrapper {
     text-align: left;
-    margin-top: 13rem;
+    padding-top: 2rem;
+
+    /* margin-top: 13rem; */
 }
-.first-title{
-    font-size: 80px;
-    color: white;
+
+
+.first-title {
+    font-size: 60px;
+    color: #FFFFFF;
     font-weight: 400;
     font-family: 'Bebas Neue', sans-serif;
+    line-height: 26px;
 }
-.second-title{
-    font-size: 80px;
+
+.second-title {
+    font-size: 60px;
     font-weight: 400;
-    color: red;
+    color: #FF3636;
+
     font-family: 'Bebas Neue', sans-serif;
+    line-height: 69px;
 }
-.home-Paragraph{
+
+.home-Paragraph {
     font-size: 16px;
-    color: white;
+    color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
+    line-height: 39.9px;
 }
-.home-btn{
+
+/* .home-btn{
     height: 60px;
     width: 10rem;
     border: none;
     border-radius: 8px;
     font-family: 'Montserrat', sans-serif;
 }
+.home-btn:hover{
+    color: #FF3636;
+    border-color: #FF3636;
+    
+} */
+.home-btn {
+    /* height: 60px;
+    width: 10rem; */
+    padding: 15px 30px 15px 30px;
+    border: 1px solid #999999;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    transition: transform 0.3s ease;
+    background-color: #FFFFFF;
+    color: #212832;
+    font-weight: 500;
+}
 
-@media only screen and (min-width: 1200px){
-    .first-title{
-        font-size: 130px;
+.home-btn:hover {
+    color: #FF3636;
+    border-color: #FF3636;
+    transform: scale(1.1);
+}
+
+
+@media only screen and (max-width: 1199px){
+    .home-Paragraph {
+        line-height: 21.9px;
     }
-    .second-title{
-        font-size: 130px;
+}
+
+@media only screen and (max-width: 600px) {
+    .first-title {
+        line-height: 40px;
     }
-    .home-Paragraph{
+
+    .second-title {
+        line-height: 53px;
+    }
+
+    .home-wrapper {
+        padding-left: 20px;
+    }
+
+    .choose-content {
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .first-title {
+        font-size: 130px;
+        line-height: 120px;
+    }
+
+    .second-title {
+        font-size: 130px;
+        white-space: nowrap;
+        line-height: 120px;
+    }
+
+    .home-Paragraph {
         font-size: 28px;
-        
+
+    }
+
+    .home-wrapper {
+        padding-left: 3rem;
+    }
+
+
+}
+
+@media only screen and (min-width: 1400px) {
+    .first-title {
+        padding-top: 3rem;
+    }
+
+    .home-section {
+        padding-bottom: 7rem;
     }
 }

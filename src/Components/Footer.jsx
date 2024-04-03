@@ -11,7 +11,7 @@ const Footer = () => {
                         <p>Terms and Conditions</p>
                         <p>Privacy policy</p>
                         <p>Personal Data Protection Policy</p>
-                        <p>Online Purchase Security -</p>
+                        <p>Online Purchase Security</p>
                         <p>Protection Policy</p>
                         <p>Our Responsible Tourism Policy</p>
                         <p>Vow to Safety</p>
@@ -34,7 +34,7 @@ const Footer = () => {
                         <p>Links</p>
                     </div>
                     <div className="our-policies col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                        <h2>OUR POLICIES</h2>
+                        <h2>ALREADY BOOKED?</h2>
                         <p>Tour Dossier Index</p>
                         <p>Travel Resources</p>
                         <p>ATP Evaluation</p>

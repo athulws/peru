@@ -1,95 +1,368 @@
-.unique{
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+.unique {
     margin-top: 5rem;
+}
+
+.difference-container {
+    padding-bottom: 40px;
 }
 
 .unique-firstTitle {
     font-size: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    margin-bottom: 0rem;
+    color: #000000;
 }
 
 .unique-secondTitle {
     font-size: 50px;
-    color: red;
+    font-weight: 400;
+    color: #FF3636;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 0rem;
 }
 
+.unique-paragraph p {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0rem;
+    text-align: left;
+    color: #603D3D;
+}
 
-.local{
-    background-image:linear-gradient(rgba(0,0,0,0.18),rgba(0,0,6,1.18)), url('../Assets/cbba0e544f5148da118b1992a4a86d40.jpeg');
+.local {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 6, 1.18)), url('../Assets/cbba0e544f5148da118b1992a4a86d40.png');
     display: flex;
     justify-content: end;
     align-items: center;
     flex-direction: column;
-    height: 40vh;
+    /* height: 40vh; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     color: white;
-    padding: 0px 30px;
+    /* padding: 0px 30px; */
     border-radius: 8px;
+    padding-top: 12rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    object-fit: cover;
 }
-.departure{
-    background-image:linear-gradient(rgba(0,0,0,0.18),rgba(0,0,6,1.18)), url('../Assets/04f854a2dd25289724c1f7562d5c73b8.jpeg');
+
+.departure {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 6, 1.18)), url('../Assets/04f854a2dd25289724c1f7562d5c73b8.png');
     display: flex;
     justify-content: end;
     align-items: center;
     flex-direction: column;
-    height: 40vh;
+    /* height: 40vh; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     color: white;
-    padding: 0px 30px;
+    /* padding: 0px 30px; */
     border-radius: 8px;
+    padding-top: 12rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    object-fit: cover;
 }
 
-.experience{
-    background-image:linear-gradient(rgba(0,0,0,0.18),rgba(0,0,6,1.18)), url('../Assets/f5a7fe787ba34e021f229f7769c15167.jpeg');
+.experience {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 6, 1.18)), url('../Assets/f5a7fe787ba34e021f229f7769c15167.png');
     display: flex;
     justify-content: end;
     align-items: center;
     flex-direction: column;
-    height: 40vh;
+    /* height: 40vh; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     color: white;
-    padding: 0px 30px;
+    /* padding: 0px 30px; */
     border-radius: 8px;
+    padding-top: 12rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    object-fit: cover;
 }
 
+.unique_setUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-@media only screen and (max-width: 600px){
-    .departure{
-        margin-top: 20px;
+.local h3 {
+    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.local p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.departure h3 {
+    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.departure p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.experience h3 {
+    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.experience p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.predeparture {
+    width: 100%;
+}
+
+.local_title {
+    width: 100%;
+}
+
+.expert {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1199px){
+    .local{
+        padding-top: 15rem;
     }
-    .experience{
-        margin-top: 20px;
+}
+@media only screen and (max-width: 991px) {
+    .difference-container {
+        max-width: 905px;
+        padding-right: 28px;
+        padding-left: 28px;
     }
     .tour{
-        margin-top: 20px;
+        max-width: 905px;  
+        padding-right: 28px;
+        padding-left: 28px;
     }
-}
-@media only screen and (min-width: 600px){
-    .departure{
-        margin-top: 20px;
+    .local,
+    .departure,
+    .experience {
+        padding-top: 530px; /* Adjust this value as needed */
+        height: 400px; /* Set a fixed height */
+    }
+    /* .local {
+        padding-top: 263px;
     }
     .experience{
-        margin-top: 20px;
+        padding-top: 214px;
+    } */
+    /* .peru {
+        height: 30rem;
+    }
+
+    .operate {
+        max-width: 905px;
+    } */
+}
+/* @media only screen and (max-width: 768px){
+    .departure {
+        margin-top: 0px;
+        padding-top: 260px;
+    }
+    .local {
+        padding-top: 260px;
+    }
+    .experience {
+        padding-top: 260px;
+    }
+} */
+@media only screen and (max-width: 767px) {
+    .difference-container {
+        max-width: 540px;
     }
     .tour{
+        max-width: 540px; 
+    }
+    .local,
+    .departure,
+    .experience {
+        padding-top: 260px; /* Adjust this value as needed */
+        height: 300px; /* Set a fixed height */
+    }
+    /* .departure {
+        margin-top: 0px;
+        padding-top: 217px;
+    } */
+    /* .local {
+        padding-top: 15rem;
+    } */
+    /* .experience{
+        padding-top: 12rem;
+    } */
+    .experience {
         margin-top: 20px;
     }
+    
 }
 
-@media only screen and (min-width: 768px){
-    .departure{
-        margin-top: 0px;
+@media only screen and (max-width: 600px) {
+    /* .departure {
+        margin-top: 20px;
     }
-}
-@media only screen and (min-width: 992px){
-    .experience{
-        margin-top: 0px;
+
+    .experience {
+        margin-top: 20px;
+    } */
+
+    .tour {
+        margin-top: 20px;
     }
-    .unique-one{
+
+    .unique {
+        padding-right: 20px;
+        padding-left: 20px;
         text-align: left;
+    }
+    .local,
+    .departure,
+    .experience {
+        padding-top: 230px; /* Adjust this value as needed */
+        height: 480px; /* Increased height value */
+    }
+    .departure{
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .departure {
+        margin-top: 20px;
+    }
+
+    /* .experience {
+        margin-top: 20px;
+    } */
+
+    .tour {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .departure {
+        margin-top: 0px;
+        /* padding-top: 15rem; */
+    }
+
+    /* .local {
+        padding-top: 15rem;
+    } */
+
+    .unique {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .experience {
+        margin-top: 0px;
+        padding-top: 212px;
+    }
+
+    .unique-one {
+        text-align: left;
+    }
+
+    .departure {
+        margin-top: 0px;
+        padding-top: 214px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .unique-firstTitle {
+        font-size: 100px;
+        line-height: 100px;
+    }
+
+    .unique-secondTitle {
+        font-size: 100px;
+        line-height: 100px;
+    }
+
+    .local h3 {
+        font-size: 24px;
+
+    }
+
+    .departure h3 {
+        font-size: 24px;
+
+    }
+
+    .experience h3 {
+        font-size: 24px;
+
+    }
+
+    .departure {
+        padding-top: 322px;
+        padding-bottom: 2rem;
+    }
+
+    .local {
+        padding-top: 318px;
+        padding-bottom: 2rem;
+    }
+
+    .experience {
+        padding-top: 293px;
+        padding-bottom: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    /* .difference-container {
+        max-width: 1442px !important;
+    }
+
+    .tour {
+        max-width: 1442px !important;
+    } */
+    .experience {
+        padding-top: 293px;
+        padding-bottom: 8px;
+    }
+    .local {
+        padding-top: 294px;
+        padding-bottom: 2rem;
+    }
+    .departure {
+        padding-top: 298px;
+        padding-bottom: 2rem;
     }
 }

@@ -9,7 +9,7 @@ import logos from '../Assets/0158628f78e6824f46bbfa351e9f71d4.png'
 const Awards = () => {
     return (
         <div className='award-wrapper'>
-            <div className='adventure'>
+            <div className='adventure-seUp'>
                 <img src={logos} alt="" />
                 <p>Adventures to Peru is an award winning, family-operated travel company that curates unforgettable journeys while keeping the planet's well-being at heart.</p>
             </div>

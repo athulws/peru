@@ -1,179 +1,355 @@
-.popularTours{
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+.children {
+    padding-right: 2px;
+}
+
+.popularTours {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.popular-sec{
+.popular-sec {
     background-color: #FF6B00;
     text-align: right;
-    
+    color: #FFFFFF;
 }
-.popular-setup{
+
+.popular-setup {
     background-color: transparent;
     background-image: linear-gradient(90deg, #0000007D 12%, #000000 74%);
-    opacity: 0.8;
+    /* opacity: 0.8; */
     padding: 15px 70px 10px 70px;
 }
-.popular-firstHeading{
+
+.popular-firstHeading {
     font-size: 50px;
-    color: white;
+    color: #FFFFFF; /* Explicitly set text color to pure white */
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    margin-bottom: 0rem;
 }
-.popular-secondHeading{
+
+.popular-secondHeading {
     font-size: 50px;
-    color: red;
+    color: #FF3636;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    margin-bottom: 0rem;
 }
-.popular-firstDays{
+
+.popular-firstDays {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    gap: 4rem;
 }
-.amazone{
-    background-image:linear-gradient(rgba(0,0,0,0.18),rgba(0,0,6,1.18)), url('../Assets/e23108029f8d41ff19a20884aecf873f.jpeg');
+
+.amazone {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 6, 1.18)), url('../Assets/e23108029f8d41ff19a20884aecf873f.png'); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 6, 1)), url('../Assets/8.incavalley\ .png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     padding: 99px 81px;
+    object-fit: cover;
 }
-.peruEncopassed{
-    background-image: linear-gradient(rgba(0,0,0,0.18),rgba(0,0,6,1.18)), url('../Assets/cbba0e544f5148da118b1992a4a86d40.jpeg');
+
+.peruEncopassed {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 6, 1)), url('../Assets/9.incatrail3.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     padding: 99px 81px;
+    object-fit: cover;
 }
-.days-nine{
+
+.daysFirst-Wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    gap: 2rem;
 }
-.NumberNine {
+
+.NumberFirst-section {
     background-image: url('../Assets/Ellipse-3-1.png');
     background-position: center center;
     background-repeat: no-repeat;
-    text-align: center; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    width: 100px; 
-    height: 100px; 
-    font-size: 24px; 
-    color: #ffffff; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    color: #ffffff;
     padding-top: 15px;
 }
 
-.days-ten{
+.NumberFirst-section p {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.daySecond-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    gap: 2rem;
 }
-.NumberTen {
+
+.NumberSecond-section {
     background-image: url('../Assets/Ellipse-3-1.png');
     background-position: center center;
     background-repeat: no-repeat;
-    text-align: center; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    width: 100px; 
-    height: 100px; 
-    font-size: 24px; 
-    color: #ffffff; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    color: #ffffff;
     padding-top: 15px;
 }
 
-.doller{
+.NumberSecond-section {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.doller {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     color: white;
+    gap: 2rem;
 }
-.price{
+
+.price {
     background-image: url('../Assets/Ellipse-3-1.png');
     background-position: center center;
     background-repeat: no-repeat;
-    text-align: center; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    width: 100px; 
-    height: 100px; 
-    font-size: 24px; 
-    color: #ffffff; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    color: #ffffff;
     padding-top: 15px;
 }
-.visit{
-    text-align: left;
-}
-.visit button{
-    height: 60px;
-    width: 10rem;
-    border: none;
-    border-radius: 8px;
-}
-.color-red{
-    color: red;
-}
-.place-name{
-    text-align: left;
-}
-.weekly{
-    color: white;
-    text-align: left;
+
+.price p {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
 }
 
-@media only screen and (max-width: 600px){
-    .popular{
+.visit {
+    text-align: left;
+    padding-top: 20px;
+}
+
+.visit button {
+    padding: 15px 30px 15px 30px;
+    border: 1px solid #999999;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.visit button:hover {
+    color: #FF3636;
+    border-color: #FF3636;
+    transform: scale(1.1);
+}
+
+.color-red {
+    color: #FF3636;
+}
+
+.place-name {
+    text-align: left;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.weekly p {
+    color: white;
+    text-align: left;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.day {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.money {
+    color: #FF3636;
+    padding-right: 10px;
+}
+
+.catagory p {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .daysFirst-Wrapper{
+        gap: 1rem;
+    }
+    .daySecond-wrapper{
+        gap: 1rem;
+    }
+    .popular {
         margin-top: 5rem;
     }
-    .popularTours{
+
+    .popularTours {
         flex-direction: column;
     }
+
+    .popular-firstDays {
+        margin-left: -17px;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0rem;
+        flex-direction: column;
+    }
+
+    .amazone {
+        padding: 99px 20px;
+    }
+
+    .peruEncopassed {
+        padding: 99px 20px;
+    }
+
+    .price {
+        width: 67px;
+    }
+
+    .catagory p {
+        font-size: 17px;
+    }
+
+    .frame-img {
+        padding: 20px 20px;
+    }
+
+
+    /* .doller {
+        margin-left: -17px;
+    } */
+}
+
+@media only screen and (max-width: 575px) {
+    .adventure-content {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .interest-place {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    
+    .amazone {
+        padding: 99px 43px;
+    }
+
+    .peruEncopassed {
+        padding: 99px 43px;
+    }
+
+    .popular {
+        margin-top: 5rem;
+    }
+
+    .popularTours {
+        flex-direction: column;
+    }
+
     .popular-firstDays {
         margin-left: -17px;
     }
-    .doller{
+
+    .doller {
         margin-left: -17px;
     }
 }
-@media only screen and (min-width: 600px){
-    .popular{
-        margin-top: 5rem;
+
+@media only screen and (min-width: 1200px) {
+    .popular-setup {
+ 
+        padding: 15px 80px 10px 70px;
     }
-    .popularTours{
-        flex-direction: column;
-    }
-    .popular-firstDays {
-        margin-left: -17px;
-    }
-    .doller{
-        margin-left: -17px;
-    }
-}
-@media only screen and (min-width: 1200px){
-    .popularTours{
+    .popularTours {
         flex-direction: row;
+
     }
-    .place-name{
-        font-size: 40px;
+
+    .place-name {
+        font-size: 60px;
     }
-    .day p{
+
+    .day p {
         font-size: 24px;
         margin-bottom: 0rem;
     }
-    .weekly p{
+
+    .weekly p {
         font-size: 24px;
     }
-    .popular-firstHeading{
+
+    .popular-firstHeading {
         font-size: 100px;
+        line-height: 100px;
     }
-    .popular-secondHeading{
+
+    .popular-secondHeading {
         font-size: 100px;
+        line-height: 74px;
+    }
+
+    .catagory p {
+        font-size: 24px;
+    }
+
+    .doller {
+        margin-left: -14px;
     }
 }
-  
+
+@media only screen and (min-width: 1400px) {
+    .doller {
+        margin-left: -17px;
+    }
+    .amazone {
+        padding: 149px 43px;
+    }
+    .peruEncopassed {
+        padding: 149px 43px;
+    }
+}

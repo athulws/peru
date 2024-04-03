@@ -8,15 +8,15 @@ const Copyright = () => {
     return (
         <div className='container-fluid copyRight-wrapper'>
             <div className="container">
-                <div className="row">
-                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 copy-right">
-                        <p>Copyright © 2024 ATP | All Rights Reserved</p>
+                <div className="row copy">
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div className='copy-right'><p>Copyright © 2024 ATP | All Rights Reserved</p></div>
                     </div>
-                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-right">
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 mainIconsSet">
                         <div className='newIcons'>
-                            <div className='icons'><FaInstagram /></div>
-                            <div className='icons'><FaTwitter /></div>
-                            <div className='icons'><FaYoutube /></div>
+                            <div className='icons'><span className='social'><FaInstagram /></span></div>
+                            <div className='icons'><span className='social'><FaTwitter /></span></div>
+                            <div className='icons'><span className='social'><FaYoutube /></span></div>
                         </div>
                     </div>
                 </div>

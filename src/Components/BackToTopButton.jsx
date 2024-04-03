@@ -29,7 +29,7 @@ const BackToTopButton = () => {
       {
         backToTopButton && (
             <button className='back-to-top-btn' style={{
-                fontSize:"30px"
+                fontSize:"40px"
             }}
             onClick={scrollUp}
             >

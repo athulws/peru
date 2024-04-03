@@ -1,20 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 .copyRight-wrapper{
     background-color: #000000;
     padding: 20px 0px;
 }
 .icons {
-    width: 50px;
-    height: 50px;
-    line-height: 48px;
+    width: 45px;
+    height: 45px;
+    line-height: 44px;
     border-radius: 50%;
     background-color: #262626;
     color: white;
+    transition: transform 0.3s ease;
 }
 .newIcons{
     display: flex;
     justify-content: right;
     align-items: center;
     gap: 20px;
+}
+.mainIconsSet{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.social{
+font-size: 23px;
 }
 .copy-right{
     display: flex;
@@ -23,5 +34,37 @@
 }
 .copy-right p{
     margin-bottom: 0rem;
-    color: white;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 100px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+.icons:hover{
+    color: #FF3636;
+    border-color: #FF3636;
+    transform: scale(1.1);
+}
+
+/* .copy-right p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 26px;
+} */
+@media only screen and (max-width: 992px){
+    .newIcons{
+        justify-content: left;
+    }
+    .copy{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .copy-right p {
+       text-align: left;
+       font-size: 14px;
+    }
+    .mainIconsSet{
+        justify-content: left;
+    }
 }

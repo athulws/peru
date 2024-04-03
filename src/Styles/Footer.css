@@ -3,6 +3,7 @@
 
 .footer-wrapper{
     background-color: #000000;
+    padding-top: 5rem;
 }
 .footer-wrapper h2{
     font-family: 'Bebas Neue', sans-serif;
@@ -11,13 +12,32 @@
     color: #FF3636;
 }
 .footer-wrapper p{
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 16px;
     color: #FFFFFF;
 }
-/* .policies h2{
-    font-size: 50px;
-    font-weight: 400;
-    font-family: 'Bebas Neue', sans-serif;
-} */
+.policies {
+    text-align: left;
+}
+.start-planning{
+    text-align: left;
+}
+.our-policies{
+    text-align: left;
+}
+
+@media only screen and (min-width: 1200px){
+    .start-planning {
+     
+        padding-left: 5rem;
+    }
+    .our-policies{
+        padding-left: 5rem;
+    }
+    /* .footer-wrapper p{
+  
+        font-size: 26px;
+      
+    } */
+}

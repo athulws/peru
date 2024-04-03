@@ -1,48 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 .adventure{
     margin-top: 5rem;
    
 }
 
-.adventure img{
+/* .adventure img{
     height: 9rem;
     margin-bottom: 20px;
-}
+} */
 
 .adventure-img img {
-    height: 34rem;
+    height: 43rem;
     border-radius: 8px;
+    object-fit: cover;
 }
 .frame-img{
     text-align: right;
 }
-.peruvian{
-    color: red;
+.frame-img img{
+    width: 23%;
 }
+.peruvian{
+    color: #FF3636;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    line-height: 70px;
+    margin-bottom: 0px;
+}
+.adventure-headings{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    line-height: 70px;
+    color: #603D3D;
+    margin-bottom: 0px;
+}
+.ralph{
+    font-size: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    color: #603D3D;
+    line-height: 70px;
+    margin-bottom: 0px;
+}
+.winner{
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 991px){
+    .adventure{
+        max-width: 905px;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .adventure{
+        max-width: 540px;
+        
+    }
+}
+
+
 @media only screen and (max-width: 600px){
     .adventure-img{
         text-align: center;
     }
+    .adventure-headings{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .peruvian{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .ralph {
+        line-height: 73px;
+        font-size: 25px;
+    }
+    .adventure-img img {
+        height: 30rem;
+    
+    }
+    .adventure-content{
+        text-align: left;
+    }
 }
 @media only screen and (min-width: 600px){
+    .adventure-content{
+        text-align: left;
+    }
     .adventure-img{
         text-align: center;
     }
-}
-@media only screen and (min-width: 1200px){
-    .adventure-img{
-        text-align: left;
+    .adventure-img img{
+        width: 100%;
     }
     .adventure-headings{
-        text-align: left;
+        font-size: 50px;
     }
     .peruvian{
-        text-align: left;
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .adventure-headings{
+        line-height: 40px;
+        font-size: 35px;
+    }
+    .ralph {
+        line-height: 73px;
+        font-size: 25px;
+    }
+    .frame-img {
+        padding-bottom: 20px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .frame-img img {
+        width: 40%;
+    }
+    .adventure-headings{
+        line-height: 50px;
+        font-size: 40px;
+    }
+    .peruvian{
+        line-height: 50px;
+        font-size: 40px;
     }
     .ralph{
-        text-align: left;
+
     }
-    .winner{
+    .second-title{
+        white-space: nowrap;
+    }
+    /* .image-one {
+        
+        width: 100%;
+    } */
+    /* .image-two{
+        width: 100%;
+    } */
+    .choose-content{
         text-align: left;
     }
     
 }
+@media only screen and (min-width: 1200px){
+    .adventure-img img {
+        width: 83%;
+        height: 37rem;
+        margin-left: 1rem;
+    }
+    .frame-img img{
+        width: 23%;
+        padding-right: 2rem;
+    }
+    .adventure-img{
+        text-align: left;
+    }
+    .adventure-headings {
+        text-align: left;
+        font-size: 46px;
+        line-height: 70px;
+    }
+    .peruvian{
+        text-align: left;
+        font-size: 46px;
+        line-height: 70px;
+    }
+    .ralph{
+        text-align: left;
+        font-size: 44px;
+    }
+    .winner{
+        text-align: left;
+    }
+    .adventure {
+        max-width: 1400px;
+        padding-bottom: 10rem;
+        padding-left: 42px;
+    }
+    
+}
+
+@media only screen and (min-width: 1400px){
+    .adventure-img img {
+        width: 78%;
+        margin-left: 3rem;
+    }
+    .adventure-headings {
+        text-align: left;
+        font-size: 55px;
+        line-height: 70px;
+    }
+    .peruvian{
+        text-align: left;
+        font-size: 55px;
+        line-height: 70px;
+    }
+}
+

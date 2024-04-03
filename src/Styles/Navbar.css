@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
 /* Navbar.css */
 .booking {
   background-color: transparent;
@@ -6,202 +10,502 @@
   height: 40px;
   width: 109px;
 }
-
-.en-dropdown{
+.booking-sets{
   background-color: transparent;
-  
+  border: 1px solid #000;
+  border-radius: 8px;
   height: 40px;
   width: 109px;
+}
 
+
+.en-dropdown {
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  width: 58px;
+color: black;
+}
+.en-dropdown-now{
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  width: 58px;
+  color: white;
 }
 
 
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 20px;
-    /* background-color: #333; */
-    color: #fff;
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-logo img {
+  height: 60px;
+
+}
+
+.navbar-options {
+  list-style: none;
+  display: flex;
+  gap: 38px;
+  margin-bottom: 0;
   
-  .navbar-logo img {
-    height: 60px;
-    /* Adjust the height as needed */
-  }
+}
+
+.navbar-options li {
+  cursor: pointer;
+}
+
+.navbar-options a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-options a:hover {
+  border-bottom: 1px solid black;
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  list-style: none;
+  padding: 1rem;
+  min-width: 300px;
+}
+
+/* .dropdown:hover .dropdown-content {
+  display: block;
+} */
+
+.dropdown-content li {
+  padding: 15px;
+  color: black;
+}
+
+.dropdown-content li:nth-child(2) {
+  border-top: 1px solid rgb(198, 198, 198);
+  border-bottom: 1px solid rgb(198, 198, 198);
+}
+
+
+/* ------------new------------------------- */
+
+.dropdown-content-navbar {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  list-style: none;
+  padding: 1rem;
+  min-width: 300px;
+}
+
+/* .dropdown:hover .dropdown-content-navbar {
+  display: block;
+} */
+.dropdown-content-navbar.active {
+  display: block;
+  background-color: white;
+}
+
+.dropdown-content.active {
+  display: block;
+  background-color: white;
+}
+
+.dropdown-content-navbar li {
+  padding: 15px;
+  color: black;
+  text-align: left;
+}
+
+.dropdown-content-navbar li:nth-child(2) {
+  border-top: 1px solid rgb(198, 198, 198);
+  border-bottom: 1px solid rgb(198, 198, 198);
+}
+
+/* ------------new------------------------- */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 2px 0;
+}
+
+#hamBurger{
+  width: 41px;
+  height: 26px;
+  /* background-color: white; */
+  color: #000000;
+}
+
+.closing {
+  color: #000000;
+  font-size: 30px;
+  padding-bottom: 4px;
+}
+
+.sidebar {
+  position: fixed;
+  top: -100%; /* Change from right: -300px; to top: -100%; */
+  width: 100%; /* Change width to 100% to cover the entire screen */
+  height: 63%;
+  background-color: #fff;
+  transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+.sidebar.active {
+  top: 94px;
+  left: 0px;
+}
+
+
+
+.sidebar.inactive {
+  /* Hide the sidebar by moving it out of the screen and fading out */
+  right: -300px;
+  opacity: 0;
+}
+
+.close-section {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+}
+
+.close-btn {
+  display: flex;
+  justify-content: flex-start;
+  width: 89%;
+}
+
+.close-btn button {
+  border: none;
+  font-size: 30px;
+  background: none;
+  color: white;
+  padding-left: 0px;
+}
+
+.options-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 20px;
+  color: black;
+  text-align: left;
+}
+
+.options-section a {
+  text-decoration: none;
+  color: black;
+}
+
+.works-accordion {
+  cursor: pointer;
+}
+
+.works-accordion.active .sub-options {
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.sub-options {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.sub-options a {
+  display: block;
+  padding: 15px 0;
+  color: black;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.drop_down {
+  font-size: 27px;
+  padding-bottom: 4px;
+}
+
+.destination-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.activity-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-main-places {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-main-places {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-places {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.bar-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+/* ---------------destination dropdown accordian-------------------------- */
+
+.accordion {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  /* padding: 18px; */
+  width: 100%;
+  /* border: 1px solid #dbdbdb; */
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.4s;
+ 
+  font-family: 'Montserrat', sans-serif;
+  position: relative; /* Ensure positioning context for pseudo-elements */
+  display: flex; /* Use flexbox for positioning */
+  justify-content: space-between; /* Pushes the content to the sides */
+  align-items: center; /* Center content vertically */
+  padding-left: 0px;
+}
+
+.accordion:after {
+content: '\25BC'; /* Unicode character for "plus" sign (+) */
+color: white;
+font-weight: bold;
+margin-right: 5px; /* Spacing between icon and text */
+}
+
+
+
+
+.active,
+.accordion:hover {
+  background-color: black;
+}
+
+.panel {
+  padding: 15px 18px;
+  border: none;
+  display: none;
+  background-color: black;
+  overflow: hidden;
+}
+
+.panel.show {
+  display: block;
+}
+
+.panel-text {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+font-size: 11px;
+}
+
+.payalIcon{
+height: 40px;
+}
+
+/* ---------------destination dropdown accordian-------------------------- */
+
+/* ---------------activity dropdown accordian-------------------------- */
+
+.custom-accordion {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  /* padding: 18px; */
+  width: 100%;
+  /* border: 1px solid #dbdbdb; */
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.4s;
+ 
+  font-family: 'Montserrat', sans-serif;
+  position: relative; /* Ensure positioning context for pseudo-elements */
+  display: flex; /* Use flexbox for positioning */
+  justify-content: space-between; /* Pushes the content to the sides */
+  align-items: center; /* Center content vertically */
+}
+
+.custom-accordion:after {
+content: '\25BC'; /* Unicode character for "plus" sign (+) */
+color: white;
+font-weight: bold;
+margin-right: 5px; /* Spacing between icon and text */
+}
+
+
+
+
+/* .active,
+.accordion:hover {
+  background-color: black;
+} */
+
+.custom-panel {
+  padding: 15px 18px;
+  border: none;
+  display: none;
+  background-color: black;
+  overflow: hidden;
   
+}
+
+.custom-panel.show {
+  display: block;
+}
+
+.panel-text {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+
+}
+
+.payalIcon{
+height: 40px;
+}
+.amazone-jungle{
+  font-size: 11px;
+  color: white;
+}
+
+/* ---------------activity dropdown accordian-------------------------- */
+
+.peru-bar{
+  color: white;
+}
+.booking-wrapper a{
+  text-decoration: none;
+}
+#populrPlace {
+  margin-top: -38px;
+}
+@media screen and (max-width: 1050px) {
   .navbar-options {
-    list-style: none;
-    display: flex;
-    gap: 3rem;
-    margin-bottom: 0; 
-      /* margin bottom : 0; kodukkanam from inspect - navbar content center il akkan */
-  }
-  
-  .navbar-options li {
-    cursor: pointer;
-  }
-  
-  .navbar-options a{
-    text-decoration: none;
-    color: white;
-  }
-  
-  .dropdown {
-    position: relative;
-    cursor: pointer;
-  }
-  
-  .dropdown-content {
     display: none;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    background-color: #fff;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
     z-index: 1;
-    list-style: none;
-    padding: 1rem;
-    min-width: 300px;
   }
-  
-  .dropdown:hover .dropdown-content {
+  .booking-sets{
     display: block;
   }
-  
-  .dropdown-content li {
-    padding: 15px;
-    color: black;
+
+  .navbar-options.active {
+    display: flex;
   }
-  
-  .dropdown-content li:nth-child(2){
-    border-top: 1px solid rgb(198, 198, 198);
-    border-bottom: 1px solid rgb(198, 198, 198);
+
+  .menu-icon {
+    display: flex;
   }
-  
+
+  .navbar {
+    justify-content: space-between;
+    padding: 10px 11px;
+  }
+}
+
+@media screen and (min-width: 1051px) {
+  .navbar-logo img {
+    height: 102px;
+    width: 102px;
+}
+  .booking-sets{
+    display: none;
+  }
   .menu-icon {
     display: none;
-    flex-direction: column;
-    cursor: pointer;
   }
-  
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 2px 0;
-  }
-  
-  .sidebar {
-    position: fixed;
-    top: 0;
-    right: -300px; 
-    width: 300px;
-    height: 100%;
-    background-color: #fff;
-    transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 1;
-    overflow-y: scroll;
-  }
-  
-  .sidebar.active {
-    right: 0;
-  }
-  
-  .sidebar.inactive {
-    /* Hide the sidebar by moving it out of the screen and fading out */
-    right: -300px;
-    opacity: 0;
-  }
-  
-  .close-section{
+
+  .navbar-options {
     display: flex;
     justify-content: center;
-    height: 5rem;
+    align-items: center;
   }
-  
-  .close-btn{
-    display: flex;
-    justify-content: flex-start;
-    width: 89%;
+
+  .sidebar {
+    display: none;
   }
-  
-  .close-btn button{
-    border: none;
-    font-size: 30px;
-    background: none;
+
+  .dropdown-content {
+
+    width: 1326px;
+    left: -34rem;
   }
-  
-  .options-section {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem; 
-    padding: 20px;
-    color: black;
+
+  .dropdown-content-navbar {
+    width: 1351px;
+    left: -45rem;
+}
+
+}
+
+@media screen and (min-width: 1400px) {
+  .dropdown-content {
+    width: 1838px;
+    left: -56rem;
   }
-  
-  .options-section a{
-    text-decoration: none;
-    color: black;
-  }
-  
-  .works-accordion {
-    cursor: pointer;
-  }
-  
-  .works-accordion.active .sub-options {
-    max-height: 500px; 
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
-  }
-  
-  .sub-options {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-  }
-  
-  .sub-options a {
-    display: block;
-    padding: 15px 0;
-    color: black;
-    text-decoration: none;
-    margin-top: 1rem;
-  }
-  
-  @media screen and (max-width: 1050px) {
-    .navbar-options {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      top: 60px;
-      right: 0;
-      width: 100%;
-      background-color: #333;
-      text-align: center;
-      z-index: 1;
-    }
-  
-    .navbar-options.active {
-      display: flex;
-    }
-  
-    .menu-icon {
-      display: flex;
-    }
-  }
-  
-  @media screen and (min-width: 1051px) {
-    .menu-icon {
-      display: none;
-    }
-  
-    .navbar-options {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .sidebar {
-      display: none; 
-    }
-  }
+  .dropdown-content-navbar {
+    width: 1872px;
+    left: -69rem;
+}
+}

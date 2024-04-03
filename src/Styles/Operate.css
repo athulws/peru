@@ -1,80 +1,488 @@
-.operate_wrapper{
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.operate_wrapper {
     background-image: url('../Assets/Rectangle-170.png');
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 0px;
-}
-
-.peru{
-   background-image:linear-gradient(rgba(0,0,0,0.18),rgba(0,0,6,1.18)), url('../Assets/operateFirstImg.jpeg');
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center center;
-   /* height: 100%; */
-   position: relative;
-   border-radius: 8px;
-}
-.ecuador{
-    background-image: linear-gradient(rgba(0,0,0,0.18),rgba(0,0,6,1.18)), url('../Assets/OperateSecondImg.jpeg');
+    /* padding: 80px 0px; */
+    padding-top: 80px;
+    padding-bottom: 62px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    /* height: 100%; */
+}
+
+
+
+
+
+
+
+
+/* ---------------------animation---------------------------- */
+
+
+
+/* .peru {
     position: relative;
+    overflow: hidden;
     border-radius: 8px;
 }
-.peru-name h3{
-    color: white;
+
+.peru::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 6, 1.18)), url('../Assets/operateFirstImg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+    z-index: 1;
 }
-.peru-name{
+
+.peru::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 6, 1.18)), url('../Assets/34.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease; 
+    z-index: 0;
+}
+
+.peru:hover::before {
+    transform: scaleY(0);
+    opacity: 0;
+}
+
+.peru:hover::after {
+    opacity: 1;
+    transform: scaleX(1); 
+}
+
+.peru:not(:hover)::after {
+    transform: scaleX(0);
+} */
+
+/* .peru {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.peru::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 6, 1.18)), url('../Assets/operateFirstImg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: transform 1s ease, opacity 1s ease;
+    z-index: 1;
+}
+
+.peru::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 6, 1.18)), url('../Assets/34.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease; 
+    z-index: 0;
+}
+
+.peru:hover::before {
+    transform: scaleY(0);
+    opacity: 0;
+}
+
+.peru:hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.peru:not(:hover)::after {
+    transform: scaleX(0); 
+}
+
+.peru-heading {
+    position: absolute;
+    bottom: 20px; 
+    left: 0;
+    right: 0;
+    text-align: center; 
+    z-index: 2; 
+} */
+
+
+.peru {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    /* transition: background-size 2s ease; */
+}
+
+.peru:hover {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 6, 1.18)); */
+    /* background-size: 115% auto; */
+}
+
+.gradient-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 6, 1.18));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.imge2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 2s ease;
+    animation: unBlurAnimation 2s ease forwards;
+}
+
+
+
+.peru-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.peru-image img {
+    width: 100%;
+    height: 100%;
+    transition: transform 2s ease;
+    animation: unBlurAnimation 2s ease forwards, displayAnimation 2s ease forwards;
+    transform: scaleY(1.1);
+    object-fit: cover;
+}
+
+@keyframes blurAnimation {
+    0% {
+        filter: blur(0px);
+    }
+
+    100% {
+        filter: blur(10px);
+    }
+}
+
+@keyframes unBlurAnimation {
+    0% {
+        filter: blur(10px);
+    }
+
+    100% {
+        filter: blur(0px);
+    }
+}
+
+@keyframes hideAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes displayAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0px);
+    }
+}
+
+.peru:hover .peru-image img {
+    transform: scaleY(0.8);
+    animation: blurAnimation 2s ease forwards, hideAnimation 2s ease forwards;
+}
+
+.peru:hover .imge2 {
+    transform: scaleX(1.5);
+    animation: unBlurAnimation 2s ease forwards;
+}
+
+.peru-name {
     position: absolute;
     bottom: 0;
-    width: 30%;
-}
-.ecuador-name{
-    position: absolute;
-    bottom: 0;
-    width: 49%;
-}
-.ecuador-name h3{
+    z-index: 2;
     color: white;
 }
-.operate-contents{
+
+
+
+/* ---------------------animation---------------------------- */
+
+/* .ecuador {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 6, 1.18)), url('../Assets/OperateSecondImg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    border-radius: 8px;
+}
+.ecuador:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 6, 1.18)), url('../Assets/equador-1.png');
+} */
+
+.ecuador {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 6, 1.18)), url('../Assets/OperateSecondImg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    border-radius: 8px;
+    overflow: hidden;
+    /* Add this line to prevent child elements from overflowing */
+}
+
+.ecuador::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 6, 1.18)), url('../Assets/equador-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    /* Slow transition effect */
+    border-radius: 8px;
+}
+
+.ecuador:hover::before {
+    opacity: 1;
+    /* Show the hovering image slowly */
+}
+
+/* Adjust z-index to ensure content appears above the hover effect */
+.ecuador-name {
+    z-index: 1;
+}
+
+
+
+
+
+.peru-name h3 {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    padding-bottom: 12px;
+    padding-left: 39px;
+}
+
+
+.ecuador-name h3 {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    padding-left: 50px;
+    padding-bottom: 3rem;
+}
+
+.operate-contents {
     text-align: left;
 }
-.operate-contents p{
-    color: white;
-}
-.operate-firstHeading{
-    font-size: 50px;
-    color: white;
-}
-.operate-secondHeading{
-    font-size: 50px;
-    color: red;
+
+.operate-contents p {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
 }
 
-@media only screen and (max-width: 600px){
-    .operate_wrapper{
-        margin-top: 5rem;
-    }
-    .peru{
-        height: 22rem;
-    }
+.operate-firstHeading {
+    font-size: 50px;
+    color: #FFF8E5;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    /* line-height: 100px; */
+    margin-bottom: 0rem;
 }
-@media only screen and (min-width: 600px){
-    .operate_wrapper{
-        margin-top: 5rem;
-    }
-    .peru{
-        height: 22rem;
-    }
-    .ecuador{
-        height: 22rem;
-    }
-}
-@media only screen and (min-width: 1200px){
 
+.operate-secondHeading {
+    font-size: 50px;
+    color: #FF3636;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    /* line-height: 100px; */
+    /* padding-bottom: 73px; */
+}
+
+@media only screen and (max-width: 991px) {
+
+    .operate-contents p{
+        font-size: 14px;
+    }
+    
+    .peru {
+        height: 28rem;
+    }
+    .operate {
+        max-width: 905px;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .operate {
+        max-width: 540px;
+        
+    }
+    .peru {
+        margin-top: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .operate_wrapper {
+        margin-top: 5rem;
+    }
+
+    .peru {
+        margin-top: 20px;
+        height: 23rem;
+    }
+
+    .ecuador {
+        height: 22rem;
+        margin-top: 20px;
+    }
+
+    .operate {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    .operate_wrapper {
+        margin-top: 5rem;
+    }
+
+    /* .peru {
+        margin-top: 20px;
+    } */
+
+    .ecuador {
+        height: 22rem;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    .peru {
+        height: 28rem;
+        margin-top: 0px;
+    }
+
+    .ecuador {
+        height: 28rem;
+        margin-top: 0px;
+    }
+
+    .operate-contents {
+        margin-top: -6px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .operate-firstHeading {
+        font-size: 100px;
+        padding-top: 9px;
+        line-height: 100px;
+    }
+
+    .operate-secondHeading {
+        font-size: 100px;
+        line-height: 100px;
+        padding-bottom: 20px;
+
+    }
+
+    .operate-contents p {
+
+        line-height: 23px;
+    }
+
+    .peru-name h3 {
+        font-size: 80px;
+    }
+
+    .ecuador-name h3 {
+        font-size: 80px;
+    }
+
+    .peru {
+        height: 475px;
+        width: 98%;
+    }
+
+    .ecuador {
+        height: 35rem;
+    }
+
+    .operate-contents {
+
+        margin-top: -17px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .operate-contents p {
+        line-height: 30px;
+    }
+
+    /* .operate{
+        max-width: 1442px;
+    } */
 }

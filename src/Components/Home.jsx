@@ -11,20 +11,21 @@ import Interest from './Interest'
 import BackToTopButton from './BackToTopButton'
 import Footer from './Footer'
 import Copyright from './Copyright'
+import GoogleRecaptcha from './GoogleRecaptcha'
 
 const Home = () => {
     return (
-        <div>
+        <div className='homePage'>
             <div className='home-section'>
                 <Navbar />
                 <div className='container'>
                     <div className='row'>
                         <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
                             <div className='home-wrapper'>
-                                <h1 className='first-title'>WE ARE</h1>
-                                <h1 className='second-title'>THE ATP PEOPLE</h1>
-                                <p className='mb-4 home-Paragraph'>ATP is an adventure company that specializes in small group travel to Peru</p>
-                                <button className='home-btn'>Book Now</button>
+                                <h1 className='first-title'>ENLIGHTENING</h1>
+                                <h1 className='second-title'>SMALL GROUP TRAVEL</h1>
+                                <p className='mb-4 home-Paragraph'>Peru's greatest expeditions, tailor made to depart anytime</p>
+                                <button className='home-btn'>Explore Tours</button>
                             </div>
                         </div>
                     </div>
@@ -38,6 +39,7 @@ const Home = () => {
             <PopularTours/>
             <Adventure/>
             <Interest/>
+            <GoogleRecaptcha/>
             <Footer/>
             <Copyright/>
             <BackToTopButton/>
