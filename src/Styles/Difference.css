@@ -156,6 +156,10 @@
     }
 }
 @media only screen and (max-width: 991px) {
+    .unique-contents{
+        display: flex;
+        align-items: center;
+    }
     .difference-container {
         max-width: 905px;
         padding-right: 28px;
@@ -199,6 +203,9 @@
     }
 } */
 @media only screen and (max-width: 767px) {
+    .unique-secondTitle{
+        text-align: left;
+    }
     .difference-container {
         max-width: 540px;
     }
